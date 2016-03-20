@@ -860,7 +860,7 @@ border: 2px solid #fff;
 .main-section#awards {
 	background: url(../images/section/awards.jpg) center center no-repeat;
 	background-size: cover;
-	height:  700px;
+	height:  1100px;
 }
 .main-section#story {
 	background: url(../images/section/story.jpg) center center no-repeat;
@@ -1031,5 +1031,11 @@ input:checked ~ .modal__overlay {
   opacity: 1;
   transform: scale(1);
   z-index: 800;
+}
+
+.wine-container{
+	display:inline-block;
+	vertical-align: middle;
+	float:none;
 }
 
