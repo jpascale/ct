@@ -27,6 +27,9 @@
 <script type="text/javascript" src="js/classie.js"></script>
 <script type="text/javascript" src="js/terroir.js"></script>
 
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+<script src="css/animatedModal.min.js"></script>
+
 <!--[if lt IE 9]>
     <script src="js/respond-1.1.0.min.js"></script>
     <script src="js/html5shiv.js"></script>
@@ -139,8 +142,8 @@
         <div class="row">
                 <h2>WINES</h2>
                 <br>
-                <div class="col-md-2 col-sm-4 col-xs-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                <div id="demo01" href="#animatedModal" class="col-md-2 col-sm-4 col-xs-6 portfolio-item">
+                    <a href="#" class="portfolio-link" data-toggle="modal">
                         <img src="images/bottles/chicas/single.png" class="img-responsive" alt="Cadus Single" title="Cadus botellas" style="margin:auto; margin-top:20px;">
                     </a>
                 </div>
@@ -169,6 +172,37 @@
                         <img src="images/bottles/chicas/chardonay.png" class="img-responsive" alt="Cadus Chardonay" title="Cadus botellas" style="margin:auto; margin-top:20px;">
                     </a>
                 </div>
+                <!---->
+                <!--DEMO01-->
+                <div id="animatedModal" style="background-image:url('images/section/modal2.jpg'); background-size:cover;">
+                    <!--<div class="close-animatedModal"> 
+                        CLOSE MODAL
+                    </div>-->
+                    <div class="pull-right close-animatedModal"><a href="#"><img style="width: 50px; height: 50px; margin-right:3vw; margin-top: 3vw;" src="images/Iconos-02.png"/></a></div>
+                    <div class="container">
+                        <div class="col-md-3 col-md-offset-1 col-xs-5">
+                            <img src="images/bottles/Sin bordes/CADUS_APP_AGRELO copia.png" style="width:100%"/>
+                        </div>
+                        <div class="col-md-3 col-md-offset-5 col-xs-6">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="row text-center" style="margin-top:14vw;">
+                                        <h1 style="color: #FFF; font-family: 'Source Serif Pro', serif; font-size:26pt;">CADUS APELLATION</h2>
+                                        <p style="color: #FFF;">Con foco en su origen, busca ser la expresión auténtica de cada terroir.</p>
+                                        <br>
+                                        <br>
+                                        <h2 style="color: #FFF;">CABERTNET SAUVIGNON DE AGRELO</h2>
+                                        <p style="color:#FFF">Un vino que expresa la vigorosidad de Agrelo: frutos negros,  especias en nariz y un cierre elegante y firme. Su estructura intensa se combina con taninos suaves y largos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-content">
+                    </div>
+                </div>
+
+                <!---->
         </div> 
     </div>
 </section><!--/.main-section -->
@@ -438,6 +472,9 @@ $(window).load(function(){
          });
          return false;
     });
+
+
+  $("#demo01").animatedModal();
   
 });
 
