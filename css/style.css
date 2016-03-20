@@ -855,12 +855,12 @@ border: 2px solid #fff;
 .main-section#wines {
 	background: url(../images/section/wines.jpg) center center no-repeat;
 	background-size: cover;
-	height:  700px;
+	min-height:  700px;
 }
 .main-section#awards {
 	background: url(../images/section/awards.jpg) center center no-repeat;
 	background-size: cover;
-	height:  1100px;
+	min-height:  700px;
 }
 .main-section#story {
 	background: url(../images/section/story.jpg) center center no-repeat;
