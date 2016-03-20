@@ -1034,8 +1034,8 @@ input:checked ~ .modal__overlay {
 }
 
 .wine-container{
-	display:inline-block;
+	/*display:inline-block;
 	vertical-align: middle;
-	float:none;
+	float:none;*/
 }
 
